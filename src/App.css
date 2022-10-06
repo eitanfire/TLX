@@ -1,38 +1,146 @@
 .App {
   text-align: center;
+  font-family: comfortaa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  text-align: left;
+  /* font-family: 'Helvetica'; */
+  font-family: comfortaa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#teacherLeagueLogo {
+  width: 25rem;
+  height: 4.75rem;
+  margin-top: -.5rem;
+  position: absolute;
+  left:0rem;
+  border: 5px solid #6699CC;
+  opacity: .75;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#banner {
+  height: 4.6rem;
+  /* background: radial-gradient(circle,
+  yellow	 50%,
+  white   80%,
+  red 33%); */
+  z-index: 25;
+  opacity: 70%; 
+  background-image: url(https://c8.alamy.com/comp/PWA4DJ/seamless-square-grid-graph-paper-pattern-in-blue-PWA4DJ.jpg);
+  border: 5px solid #6699CC;
+  background-size: 30rem;
+
+}
+
+#lounge-subtitle {
+  color: rgb(208, 44, 156);
+  padding-left: 2.5rem;
+  /* font-family: comfortaa; */
+}
+
+.lounge-card-item {
+  background-color: offwhite;
+  color: rgb(18, 67, 101);
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px #ccc;
+  margin: 12px 5rem;
+  display: inline-block;
+  width: 15rem;
+  margin-top: 4rem;
+  /* height: 50%; */
+}
+
+.lounge-card-title {
   color: white;
+  background-color: rgb(125, 14, 119);
+  font-size: 1.25rem;
+  font-family: Avenir-Heavy;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 12px 0px 0px 0px;
+  height: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.lounge-card-content-theme {
+  text-align: left;
+}
+#Footer {
+  background-image: linear-gradient(#cec8ff, white);
+  padding: 20px 0;
+  margin-top: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lounge-card-content {
+  /* padding: 4px 16px 30px 16px; */
+  padding: .75rem;
+
+}
+
+.lounge-card-image {
+  /* background-color: lightGray; */
+  /* height:fit-content; */
+  width:fit-content;
+  max-height: 12rem;
+  max-width: 12rem;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btnStyle {
+  text-align: center;
+  margin-top: 1rem;
+}
+.btn {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.btn:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.btn:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.btn:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.lounge-card-subtitle {
+  text-align: center;
+  background-color: green;
+  color: blue;
 }
