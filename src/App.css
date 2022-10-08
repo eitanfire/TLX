@@ -49,6 +49,10 @@ h2 {
   margin-top: 4rem;
 }
 
+.lounge-card-item :nth-child(3) {
+  border: 2px solid orange;
+}
+
 .lounge-card-title {
   color: white;
   background-color: rgb(125, 14, 119);
