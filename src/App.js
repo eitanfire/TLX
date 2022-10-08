@@ -8,16 +8,15 @@ import TheTeachersLounge from './pages/TheTeachersLounge';
 function App() {
   return (
     <div className="App">
-  <Container>
-    <Header className='col col-12' />
-    <TheTeachersLounge />
-      {/* <h1>
+      <Container>
+        <Header className='col col-12' />
+        <TheTeachersLounge />
+        {/* <h1>
         Hello World!
       </h1> */}
-      {/* <LoungeCard /> */}
-      <Footer />
-  </Container>
-  </div>
+        <Footer />
+      </Container>
+    </div>
   );
 }
 
