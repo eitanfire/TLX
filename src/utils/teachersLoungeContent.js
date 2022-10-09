@@ -70,7 +70,7 @@ export const loungeData = [
     src={Homer} alt='The Rant' />,
     content:
       < >
-         Get Up on That Soapbox in the depths of r/Teachers
+         Get Up on That Soapbox in r/Teachers
 
         <div className='btnStyle col-8'>
           <a

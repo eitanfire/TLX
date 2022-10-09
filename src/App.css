@@ -38,6 +38,16 @@ h2 {
   padding-left: 2.5rem;
   font-family: comfortaa;
 } */
+.lounge-subtitle {
+  background-color: offwhite;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px #ccc;
+  margin: 12px 5rem;
+  display: inline-block;
+  width: flex;
+  height:max-content;
+  padding: 2rem;
+}
 
 .lounge-card-item {
   background-color: offwhite;
@@ -45,30 +55,42 @@ h2 {
   box-shadow: 0px 0px 8px #ccc;
   margin: 12px 5rem;
   display: inline-block;
-  width: 15rem;
-  margin-top: 4rem;
+  width: 18rem;
+  margin-top: 2rem;
+  height:max-content;
 }
 
 /* .lounge-card-item :nth-child(3) {
   border: 2px solid orange;
 } */
 
-#snark {
+/* #snark {
 color: #6699CC;
 width: max-content;
 margin-top: 140%;
-}
+} */
 
 #snarkImg {
-background-color: #6699CC;
-width: max-content;
-width: 25rem;
-height: auto;
-margin-top: -.5rem;
-position: absolute;
-/* left: center; */
-border: 5px solid #6699CC;
+  position: relative;
+  top:-5rem;
+  right: 1.5rem;
+  z-index: 300rem;
 }
+
+#snarkImg:active {
+  /* width: max-content;
+  width: 25rem;
+  height: auto;
+  margin-top: -.5rem; */
+  position:fixed;
+  /* left: center; */
+  border: 5px solid #6699CC;
+  /* top: 2%; */
+  /* bottom: -5rem; */
+  /* left: inline; */
+  /* display: block; */
+  display: inline-block;
+  }
 
 .Homer {
   position: relative;
@@ -76,6 +98,7 @@ border: 5px solid #6699CC;
   top: -.20rem;
   height: 7rem;
   width: auto;
+  z-index: 0rem;
 }
 
 .hotTake {

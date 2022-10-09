@@ -9,8 +9,12 @@ const TheTeachersLounge = () => {
                 <Col>
          <h1>The Teachers Lounge</h1>
                 </Col>
-             <Col id='lounge-subtitle' className="col-6 col-md-8">
+             <Col className="col-6 col-md-8 lounge-subtitle">
+                <Card>
+                    <CardBody>
          <h2>Know that dream where you show up for the final and realize you forgot to go to class? Yeah we have that too but were supposed to be teaching it!</h2>
+                    </CardBody>
+                 </Card>
                 </Col>
             <Card>
            <CardBody>
