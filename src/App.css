@@ -33,11 +33,11 @@ h2 {
 
 }
 
-#lounge-subtitle {
+/* #lounge-subtitle {
   color: rgb(208, 44, 156);
   padding-left: 2.5rem;
-  /* font-family: comfortaa; */
-}
+  font-family: comfortaa;
+} */
 
 .lounge-card-item {
   background-color: offwhite;
@@ -49,9 +49,45 @@ h2 {
   margin-top: 4rem;
 }
 
-.lounge-card-item :nth-child(3) {
+/* .lounge-card-item :nth-child(3) {
   border: 2px solid orange;
+} */
+
+#snark {
+color: #6699CC;
+width: max-content;
+margin-top: 140%;
 }
+
+#snarkImg {
+background-color: #6699CC;
+width: max-content;
+width: 25rem;
+height: auto;
+margin-top: -.5rem;
+position: absolute;
+/* left: center; */
+border: 5px solid #6699CC;
+}
+
+.Homer {
+  position: relative;
+  /* right: 0rem; */
+  top: -.20rem;
+  height: 7rem;
+  width: auto;
+}
+
+.hotTake {
+height: 8rem;
+width: auto;
+}
+
+/* .lounge-card-item :matches(#snark) {
+  border: 2px solid rgb(19, 132, 188);
+  color: #000000;
+
+} */
 
 .lounge-card-title {
   color: white;
@@ -146,7 +182,7 @@ h2 {
   color: blue;
 }
 
-#snark {
-  background-color: white;
-  max-width: 1000%;
+.card-body {
+  /* width:18rem; */
+  outline: true;
 }
