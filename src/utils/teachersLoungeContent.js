@@ -7,7 +7,7 @@ import HotTake from '../img/HotTake.jpeg';
 import '../App.css'
 import { Container, Row, Col } from 'react-dom';
 import ImageComponent from '../components/snarkModal';
-
+import Modal from '../components/Modal';
 
 export const loungeData = [
   {

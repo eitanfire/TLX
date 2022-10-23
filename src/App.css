@@ -150,8 +150,6 @@ width: auto;
   background:
   radial-gradient(ellipse at top, #6699CC, transparent),
   radial-gradient(ellipse at bottom, #6699CC, transparent);
-  /* background-image: linear-gradient(#cec8ff, white); */
-  /* padding: 2rem 0; */
   margin-top: 2rem;
   margin-bottom: -2rem;
   padding-top: 1.5rem;
@@ -159,7 +157,6 @@ width: auto;
   margin-right: -11rem;
   text-align: center;
   font-size: larger;
-  /* width: auto; */
   color: white;
   -webkit-text-stroke: .1px gold;
 
@@ -251,4 +248,66 @@ width: auto;
 
 .image {
   width: 300px;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events:none;
+}
+
+.modal.show {
+opacity: 1;
+pointer-events: visible;
+}
+
+.modal-content {
+  width: 500px;
+  background-color: #fff;
+  transform: translateY(-200px);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+
+.modal-header, .modal-footer {
+  padding: 10px;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.modal-body {
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.modal.enter-done {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal.exit {
+  opacity: 0;
+}
+
+.modal.enter-done .modal-content {
+  transform: translateY(-200px);
+}
+
+.modal.exit .modal-content {
+  transform: translateY(-200px);
 }
