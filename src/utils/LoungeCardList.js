@@ -6,7 +6,7 @@ const LoungeCardList = ({ icon, title, content, image, subtitle }) => {
   return (
     <div className="lounge-card-item">
       <div className="lounge-card-title" 
-      onClick={() => setIsActive(!isActive)}
+      // onClick={() => setIsActive(!isActive)}
       >
         <CardTitle>{icon}{title}
         </CardTitle>

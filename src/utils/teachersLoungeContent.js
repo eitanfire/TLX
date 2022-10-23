@@ -6,6 +6,8 @@ import Snark from '../img/urges.jpeg';
 import HotTake from '../img/HotTake.jpeg';
 import '../App.css'
 import { Container, Row, Col } from 'react-dom';
+import ImageComponent from '../components/snarkModal';
+
 
 export const loungeData = [
   {
@@ -47,12 +49,17 @@ export const loungeData = [
     title: <span style={{ fontStyle: 'italic'
                           //  width:20rem
                           }}>Snark</span>,
-    image: <img id='snarkImg'
-      src={Snark} alt='Snark'
-    />,
+    image: 
+        <img 
+        id='snarkImg'
+        src={Snark} alt='Snark'
+        />,
     content:
       < >
-      <div  id='snark'>
+      <div          
+      // id='snarkImg'
+>
+      {/* <ImageComponent /> */}
         {/* <div className='btnStyle col-8'>
            <a
             role='button'
@@ -66,8 +73,7 @@ export const loungeData = [
   ,
   {
     title: <span >The Rant</span>,
-    image: <img className='Homer'
-    src={Homer} alt='The Rant' />,
+    image: <img className='Homer' src={Homer} alt='The Rant' />,
     content:
       < >
          Get Up on That Soapbox in r/Teachers
