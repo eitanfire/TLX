@@ -1,29 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { CSSTransition } from 'react-transition-group' 
 import ReactDom from 'react-dom'
 
 const Modal = props => {
-    // if (!props.show) {
-    //     return null
-    // }
-
-    // const closeOnEscapeKeyDown = (e) => {
-    //     if ((e.charCode || e.keyCode) === 27) {
-    //         props.onClose()
-    //     }
-    // }
+    const closeOnEscapeKeyDown = e => {
+        if ((e.charCode || e.keyCode) === 27) {
+          props.onClose();
+        }
+      };
     
-    // useEffect(() => {
-    //     document.body.addEventListener('keydown', closeOnEscapeKeyDown)
-    //     return function cleanup() {
-    //         document.body.removeEventListener('keydown', closeOnEscapeKeyDown)      
-    //     }
-    // }, [])
+      useEffect(() => {
+        document.body.addEventListener("keydown", closeOnEscapeKeyDown);
+        return function cleanup() {
+          document.body.removeEventListener("keydown", closeOnEscapeKeyDown);
+        };
+      }, []);
 
     return ReactDom.createPortal(
-
-    )
-    return (
         <CSSTransition
         in={props.show}
         unmountOnExit
