@@ -1,4 +1,4 @@
-import { LESSONPLANS } from '../utils/LESSONPLANS';
+import { LESSONPLANS } from '../../utils/LESSONPLANS';
 
 export const selectAllLessonPlans = () => {
     return LESSONPLANS;

@@ -1,8 +1,9 @@
 import { Container, Row, Col, /*Button*/ } from "reactstrap";
 import LessonPlanDetail from '../features/LessonPlanDetail';
-import LessonPlansList from "../pages/LessonPlansList";
+import LessonPlansList from "../features/lessonplans/LessonPlansList";
 import { useState } from "react";
-import { selectLessonPlanById } from '../pages/premiumContentSlice';
+// import { selectLessonPlanById } from '../features/lessonplans/LessonPlansList';
+import { selectLessonPlanById } from '../features/lessonplans/premiumContentSlice';
 import React from 'react';
 
 // import { selectRandomLessonPlan } from "./premiumContentSlice";
@@ -15,21 +16,14 @@ const LessonPlansDirectoryPage = () => {
     return (
         <Container>
             <Row>
-            {/* <Col>
-            <LessonPlansList setLessonPlanId={setLessonPlanId} />
-            </Col>
-                <Col sm='5' md='7'>
-                    <LessonPlanDetail setLessonPlanId={setLessonPlanId} />
+                <Col className="col col-6"
+                // className='LessonPlanDetail '
+                // sm='7' md='5'
+                >
+                    <LessonPlanDetail className='LessonPlanDetail' lessonplan={selectedLessonPlan} />
                 </Col>
-                <Col sm='7' md='5'>
-                    <LessonPlanDetail lessonplan={selectedLessonPlan} />
-                </Col> */}
-
                 <Col sm='5'md='7'>
                     <LessonPlansList setLessonPlanId={setLessonPlanId}/>
-                </Col>
-                <Col sm='7' md='5'>
-                    <LessonPlanDetail lessonplan={selectedLessonPlan} />
                 </Col>
             </Row>
         </Container>

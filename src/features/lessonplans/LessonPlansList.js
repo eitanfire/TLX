@@ -7,7 +7,7 @@ const LessonPlansList = ({ setLessonPlanId }) => {
     const lessonplans = selectAllLessonPlans();
 
     return (
-        <Row className='ms-auto'>
+        <Row className='row-content ms-auto'>
         {lessonplans.map((lessonplan) => {
             return (
                 <Col 

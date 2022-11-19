@@ -51,11 +51,11 @@ h2 {
   padding: 2rem;
 }
 
-.lounge-card-item {
+.lessonplan-card-item, .lounge-card-item {
   background-color: offwhite;
   border-radius: 8px;
   box-shadow: 0px 0px 8px #ccc;
-  margin: 12px 5rem;
+  margin: 20px 5rem;
   display: inline-block;
   width: 18rem;
   margin-top: 2rem;
@@ -162,12 +162,11 @@ width: auto;
 
  }
 
-.lounge-card-content {
+ .card-body, .lounge-card-content {
   padding: .75rem;
-
 }
 
-.lounge-card-image {
+.lessonplan-card-image, .lounge-card-image {
   width: fit-content;
   max-height: 12rem;
   max-width: 12rem;
@@ -310,4 +309,42 @@ pointer-events: visible;
 
 .modal.exit .modal-content {
   transform: translateY(-200px);
+}
+
+.card-img-overlay .card-title {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-body > .card-title {
+  font-family: 'Lobster', cursive;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+h1,
+h2,
+h3,
+.card-body > .card-title {
+  font-family: 'Lobster', cursive;
+}
+
+/* .featuredLesson {
+  position: relative;
+  height: 2rem;
+  width: auto;
+
+} */
+
+.LessonPlanDetail {
+  min-height: 8vmax;
 }

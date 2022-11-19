@@ -8,7 +8,7 @@ import '../App.css'
 // import { Container, Row, Col } from 'react-dom';
 // import ImageComponent from '../components/snarkModal';
 // import Modal from '../components/Modal';
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
 
 export const loungeData = [

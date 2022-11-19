@@ -11,7 +11,7 @@ const TheTeachersLounge = () => {
                 <h1>The Teachers Lounge</h1>
                 {/* <ImageComponent /> */}
             </Col>
-            <Col className="col-6 col-md-8 lounge-subtitle">
+            <Col className="lounge-subtitle col-6 col-md-8">
                 <Card>
                     <CardBody>
                         <h2>Know that dream where you show up for the final and realize you forgot to go to class?
@@ -24,7 +24,7 @@ const TheTeachersLounge = () => {
                     <Row>
                     </Row>
                     <Row>
-                        <Col className="card col-12 col-lg-9 ">
+                        <Col className="card col-12 col-lg-9">
                             {loungeData.map(({ title, content, image, modal, id }) => (
                                 <LoungeCardList title={title} content={content} image={image} modal={modal} key={id}/>
                             ))}

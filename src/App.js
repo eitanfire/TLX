@@ -8,7 +8,7 @@ import TheTeachersLounge from './pages/TheTeachersLounge';
 // import { Routes, Route } from 'react-router-dom';
 // import ContactPage from './pages/ContactPage';
 // import HomePage from './pages/HomePage';
-import PremiumContent from './pages/PremiumContent';
+import PremiumContent from './features/lessonplans/PremiumContent';
 // import FreeContent from './pages/FreeContent';
 import LessonPlansDirectoryPage from './pages/LessonPlansDirectoryPage';
 
@@ -18,7 +18,7 @@ function App() {
     <div className="App">
         <Header className='col col-12' />
         <LessonPlansDirectoryPage />
-        <PremiumContent />
+        {/* <PremiumContent /> */}
         <TheTeachersLounge />
         {/* <button onClick={() => setShow(true)}>Show Modal</button>
         <Modal title="My Modal" onClose={() => setShow(false)} show={show}>
@@ -31,10 +31,10 @@ function App() {
 
 export default App;
 
-{/* <Routes>
+{/* <Rocd utes>
 <Route path='/' element={<HomePage />} />
 <Route path='contact' element={<ContactPage />} />
 <Route path='free' element={<FreeContent />} />
 <Route path='paid' element={<PremiumContent />} />
 <Route path='lounge' element={<TheTeachersLounge />} />
-</Routes> */}
+</Rocd> */}
