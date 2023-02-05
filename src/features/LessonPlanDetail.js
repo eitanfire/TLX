@@ -6,7 +6,6 @@ const LessonPlanDetail = ( {lessonplan} ) => {
     return (
         <Col className='featuredLesson'
         // md='12' className='m-4'
-        
         >
             <Card>
                 <CardImg top src={image} alt={name} />

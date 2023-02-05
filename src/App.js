@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 // import React, { useState } from 'react';
 import TheTeachersLounge from './pages/TheTeachersLounge';
 // import Modal from './components/Modal';
-// import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 // import ContactPage from './pages/ContactPage';
 // import HomePage from './pages/HomePage';
 import PremiumContent from './features/lessonplans/PremiumContent';
@@ -31,10 +31,10 @@ function App() {
 
 export default App;
 
-{/* <Rocd utes>
+{/* <Routes>
 <Route path='/' element={<HomePage />} />
 <Route path='contact' element={<ContactPage />} />
 <Route path='free' element={<FreeContent />} />
 <Route path='paid' element={<PremiumContent />} />
 <Route path='lounge' element={<TheTeachersLounge />} />
-</Rocd> */}
+</Routes> */}

@@ -2,14 +2,12 @@ import { Col, Row, Container } from 'reactstrap';
 import { Card, CardBody } from 'reactstrap';
 import LoungeCardList from '../utils/LoungeCardList';
 import { loungeData } from '../utils/teachersLoungeContent.js';
-// import ImageComponent from '../components/snarkModal';
 
 const TheTeachersLounge = () => {
     return (
         <Container>
             <Col>
                 <h1>The Teachers Lounge</h1>
-                {/* <ImageComponent /> */}
             </Col>
             <Col className="lounge-subtitle col-6 col-md-8">
                 <Card>
@@ -25,8 +23,8 @@ const TheTeachersLounge = () => {
                     </Row>
                     <Row>
                         <Col className="card col-12 col-lg-9">
-                            {loungeData.map(({ title, content, image, modal, id }) => (
-                                <LoungeCardList title={title} content={content} image={image} modal={modal} key={id}/>
+                            {loungeData.map(({ title, content, image, id }) => (
+                                <LoungeCardList title={title} content={content} image={image} key={id}/>
                             ))}
                         </Col>
                     </Row>
